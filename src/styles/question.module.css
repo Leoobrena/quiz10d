@@ -12,7 +12,8 @@
 }
 
 .title {
-  font-size: 1.7rem;;
+  font-size: 1.4rem;
+  text-align: center;
 }
 
 .input {
@@ -21,7 +22,7 @@
   padding-top: 2rem;
   background: transparent;
   border-bottom: 1px solid #000;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .input:focus{
@@ -32,9 +33,9 @@
 
 .button {
 border: none;
-margin: 4rem 0;
+margin: 2rem 0;
 padding: 0.8rem;
-font-size: 1.3rem;
+font-size: 1.1rem;
 background: #33CC99;
 border-radius: 1rem;
 font-weight: bold;
@@ -46,4 +47,34 @@ transition: ease-in-out .2s;
 
 .button:hover {
   background: #30b186;
+}
+
+.buttonContainer {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.buttonContainer button{
+  padding: 1rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 1rem;
+
+  transition: ease-in-out .2s;
+}
+
+.buttonContainer button:hover{
+  background: #30b186;
+  color:rgb(240, 227, 227);
+}
+
+.selected {
+  background-color: #30b186;
+  color:rgb(240, 227, 227)
+}
+
+.selectButton {
+  padding: .7rem;
 }

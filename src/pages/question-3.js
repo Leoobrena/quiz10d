@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Link from "next/link";
 import { UserContext } from "../context/UserContext";
 
 import styles from "../styles/question.module.css";
 
-export default function QuestionTwo() {
-  const { name, setDificult } = useContext(UserContext);
+export default function QuestionThree() {
+  const { name, setDificult, dificult } = useContext(UserContext);
 
   return (
     <div className={styles.container}>
@@ -13,13 +13,36 @@ export default function QuestionTwo() {
         Obrigado, {name} Qual é sua Maior Dificuldade para perder peso?
       </h1>
 
-      <button>Alimentação inadequada</button>
-      <button>Metabolismo lento</button>
-      <button>Ansiedade</button>
-      <button>Falta de foco</button>
-
+      <div className={styles.buttonContainer}>
+        <button
+          className={
+            dificult === "Alimentação inadequada" ? styles.selected : ""
+          }
+          onClick={() => setDificult("Alimentação inadequada")}
+        >
+          Alimentação inadequada
+        </button>
+        <button
+          className={dificult === "Metabolismo lento" ? styles.selected : ""}
+          onClick={() => setDificult("Metabolismo lento")}
+        >
+          Metabolismo lento
+        </button>
+        <button
+          className={dificult === "Ansiedade" ? styles.selected : ""}
+          onClick={() => setDificult("Ansiedade")}
+        >
+          Ansiedade
+        </button>
+        <button
+          className={dificult === "Falta de foco" ? styles.selected : ""}
+          onClick={() => setDificult("Falta de foco")}
+        >
+          Falta de foco
+        </button>
+      </div>
       <button type="submit" className={styles.button}>
-        <Link href="question-3">Continuar</Link>
+        Continuar
       </button>
     </div>
   );

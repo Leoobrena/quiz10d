@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Link from "next/link";
 import { UserContext } from "../context/UserContext";
 
 import styles from "../styles/question.module.css";
@@ -18,7 +19,7 @@ export default function QuestionTwo() {
       />
 
       <button type="submit" className={styles.button}>
-        Continuar
+        <Link href="question-3">Continuar</Link>
       </button>
     </div>
   );
