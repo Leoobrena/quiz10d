@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 
 import "../styles/globals.css";
 import styles from "../styles/Home.module.css";
+import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
           <ToastContainer />
         </div>
+        <Footer />
       </div>
     </UserContextProvider>
   );

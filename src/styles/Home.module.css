@@ -7,6 +7,7 @@
   height: 100vh;
 
   background: linear-gradient(0deg, rgba(30, 26, 31, 0.956) 0%, rgb(0, 0, 0) 100%);
+
 }
 
 .content {
@@ -32,5 +33,19 @@
 @media screen and (min-width: 800px) {
   .content {
     height: 700px;
+  }
+  .container {
+    height: 100%;
+
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    height: 700px;
+  }
+
+  .container {
+    height: 100%;
   }
 }

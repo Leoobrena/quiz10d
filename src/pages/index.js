@@ -6,13 +6,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        ❤️ Para Podermos Entender Melhor os Seus Objetivos, Por Favor, Responda
-        à Sequência de 6 Perguntas, Leva Apenas 7 Minutinhos do Seu Tempo.
+        Para podermos entender melhor os seus objetivos, por favor, você precisa
+        responder uma sequência de 7 perguntas.... Não vai levar nem 5 minutos.
         <br />
         <br />
-        👉 Clique no Botão Para Começar!
-        <br />
-        Leva menos 5 min.
+        Clique no Botão Para Começar!
       </h1>
 
       <button type="submit" className={styles.button}>

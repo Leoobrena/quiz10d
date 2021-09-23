@@ -10,7 +10,7 @@ export default function QuestionTwo() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        Muito prazer, {name} e qual é o seu email🤔 ?
+        Ok {name}, qual é o seu email que gostaria de receber nossas novidade?
       </h1>
       <input
         type="email"

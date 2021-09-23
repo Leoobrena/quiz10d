@@ -15,12 +15,10 @@ export default function QuestionThree() {
 
       <div className={styles.buttonContainer}>
         <button
-          className={
-            dificult === "Alimentação inadequada" ? styles.selected : ""
-          }
-          onClick={() => setDificult("Alimentação inadequada")}
+          className={dificult === "Má alimentação" ? styles.selected : ""}
+          onClick={() => setDificult("Má alimentação")}
         >
-          Alimentação inadequada
+          Má alimentação
         </button>
         <button
           className={dificult === "Metabolismo lento" ? styles.selected : ""}

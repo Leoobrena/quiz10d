@@ -12,7 +12,7 @@ export default function QuestionOne() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Olá, Qual o seu nome? 🤔</h1>
+      <h1 className={styles.title}>Qual o seu nome? 🤔</h1>
       <input
         type="text"
         className={styles.input}

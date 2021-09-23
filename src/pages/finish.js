@@ -11,12 +11,18 @@ export default function QuestionFive() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        {name}, obrigado por responder as perguntas, já analisamos as suas
-        respostas: ⁣ ⁣ Você tem {idade} anos, Sua maior dificuldade é {dificult}
-        , tem {pesoAtual} KG e Deseja chegar em {pesoDesejado} KG. ⁣ ⁣ O Desafio
-        10D foi pensado exatamente para ajudar você chegar nos seus objetivos,
-        por isso clique agora mesmo no botão abaixo para entrar para o nosso
-        Desafio.⁣
+        {name}, muito obrigada por responder todas as perguntas, já analisamos
+        as suas respostas 😃. <br /> Você tem {idade} anos, Sua maior
+        dificuldade é {dificult} e você tá com {pesoAtual}kg, Deseja chegar aos{" "}
+        {pesoDesejado}
+        kg né mesmo!
+        <br />
+        Muito bem nosso desafio 10d foi pensado exatamente para ajudar pessoas
+        iguais a você a chegar no seus objetivos, por isso se você estar
+        interessada em conhecer nosso desafio.
+        <br />
+        <br />
+        Clique no botão abaixo para garantir sua vaga no Desafio.
       </h1>
 
       <button
@@ -24,7 +30,7 @@ export default function QuestionFive() {
         className={styles.button}
         onClick={() => handleSubmit()}
       >
-        Clique aqui para Entrar no Desafio
+        EU QUERO ENTRAR NO DESAFIO
       </button>
     </div>
   );

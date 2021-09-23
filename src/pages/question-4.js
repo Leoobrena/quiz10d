@@ -9,7 +9,10 @@ export default function QuestionFour() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Onde a Gordura mais te incomoda, {name}?</h1>
+      <h1 className={styles.title}>
+        Muito obrigado! E onde a gordura localizada que mais tem te incomodado{" "}
+        {name}?
+      </h1>
 
       <div className={styles.buttonContainer}>
         <button
