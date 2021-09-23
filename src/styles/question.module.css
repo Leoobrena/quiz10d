@@ -3,7 +3,7 @@
   border: 10px solid transparent;
   background:linear-gradient(45deg,rgb(240, 227, 227),rgb(243, 207, 141)) border-box;
 
-  margin:2rem;
+  margin:1rem;
 
   display: flex;
   align-items: center;

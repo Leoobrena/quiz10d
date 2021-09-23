@@ -4,22 +4,20 @@ import { UserContext } from "../context/UserContext";
 
 import styles from "../styles/question.module.css";
 
-export default function QuestionTwo() {
-  const { name, setEmail } = useContext(UserContext);
+export default function QuestionFive() {
+  const { setPesoAtual } = useContext(UserContext);
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>
-        Muito prazer, {name} e qual é o seu email🤔 ?
-      </h1>
+      <h1 className={styles.title}>Qual o seu peso atual?</h1>
       <input
-        type="email"
+        type="text"
         className={styles.input}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={(e) => setPesoAtual(e.target.value)}
       />
 
       <button type="submit" className={styles.button}>
-        <Link href="/question-3">Continuar</Link>
+        <Link href="/question-7">Continuar</Link>
       </button>
     </div>
   );

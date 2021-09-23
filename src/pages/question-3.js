@@ -42,7 +42,7 @@ export default function QuestionThree() {
         </button>
       </div>
       <button type="submit" className={styles.button}>
-        Continuar
+        <Link href="/question-4">Continuar</Link>
       </button>
     </div>
   );

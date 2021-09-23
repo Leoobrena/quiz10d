@@ -18,7 +18,7 @@ export function QuestionOne() {
       />
 
       <button type="submit" className={styles.button}>
-        <Link href="question-2">Continuar</Link>
+        <Link href="/question-2">Continuar</Link>
       </button>
     </div>
   );
