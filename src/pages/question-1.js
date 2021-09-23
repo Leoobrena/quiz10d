@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import Link from "next/link";
 
-import { UserContext } from "../../context/UserContext";
+import { UserContext } from "../context/UserContext";
 
-import styles from "./style.module.css";
+import styles from "../styles/question.module.css";
 
-export function QuestionOne() {
+export default function QuestionOne() {
   const { setName } = useContext(UserContext);
 
   return (
