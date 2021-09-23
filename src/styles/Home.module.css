@@ -21,3 +21,16 @@
   background: rgb(177,34,195);
   background: linear-gradient(0deg, rgba(177,34,195,0.9556197478991597) 0%, rgba(253,187,45,1) 100%);
 }
+
+
+@media screen and (min-width: 1200px) {
+  .content {
+    height: 800px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    height: 700px;
+  }
+}
