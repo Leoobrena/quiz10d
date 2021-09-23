@@ -14,6 +14,7 @@ function MyApp({ Component, pageProps }) {
       .then((ReactPixel) => {
         ReactPixel.init("295744985240338"); // facebookPixelId
         ReactPixel.pageView();
+        ReactPixel.track("Quiz do Desafio");
 
         router.events.on("routeChangeComplete", () => {
           ReactPixel.pageView();
