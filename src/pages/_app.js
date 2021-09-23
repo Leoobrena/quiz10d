@@ -1,9 +1,26 @@
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import { Header } from "../components/Header";
 import { UserContextProvider } from "../context/UserContext";
 import "../styles/globals.css";
 import styles from "../styles/Home.module.css";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
+  useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("295744985240338"); // facebookPixelId
+        ReactPixel.pageView();
+
+        router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });
+  }, [router.events]);
+
   return (
     <UserContextProvider>
       <div className={styles.container}>
