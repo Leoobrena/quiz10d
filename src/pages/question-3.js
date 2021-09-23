@@ -41,9 +41,15 @@ export default function QuestionThree() {
           Falta de foco
         </button>
       </div>
-      <button type="submit" className={styles.button}>
-        <Link href="/question-4">Continuar</Link>
-      </button>
+      {dificult === "" ? (
+        <button disabled type="submit" className={styles.button}>
+          Continuar
+        </button>
+      ) : (
+        <button type="submit" className={styles.button}>
+          <Link href="/question-4">Continuar</Link>
+        </button>
+      )}
     </div>
   );
 }

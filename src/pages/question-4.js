@@ -37,9 +37,15 @@ export default function QuestionFour() {
           Outro
         </button>
       </div>
-      <button type="submit" className={styles.button}>
-        <Link href="/question-5">Continuar</Link>
-      </button>
+      {gordura === "" ? (
+        <button disabled type="submit" className={styles.button}>
+          Continuar
+        </button>
+      ) : (
+        <button type="submit" className={styles.button}>
+          <Link href="/question-5">Continuar</Link>
+        </button>
+      )}
     </div>
   );
 }

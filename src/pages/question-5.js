@@ -5,7 +5,7 @@ import { UserContext } from "../context/UserContext";
 import styles from "../styles/question.module.css";
 
 export default function QuestionFive() {
-  const { setIdade } = useContext(UserContext);
+  const { idade, setIdade } = useContext(UserContext);
 
   return (
     <div className={styles.container}>
@@ -16,9 +16,15 @@ export default function QuestionFive() {
         onChange={(e) => setIdade(e.target.value)}
       />
 
-      <button type="submit" className={styles.button}>
-        <Link href="/question-6">Continuar</Link>
-      </button>
+      {idade === "" ? (
+        <button disabled type="submit" className={styles.button}>
+          Continuar
+        </button>
+      ) : (
+        <button type="submit" className={styles.button}>
+          <Link href="/question-6">Continuar</Link>
+        </button>
+      )}
     </div>
   );
 }
