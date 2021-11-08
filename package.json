@@ -16,7 +16,8 @@
     "react-facebook-pixel": "^1.0.4",
     "react-quiz-component": "^0.3.8",
     "react-toastify": "^8.0.2",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint": "7.32.0",

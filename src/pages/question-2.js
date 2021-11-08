@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { isEmail } from 'validator'
 import Link from "next/link";
 import { UserContext } from "../context/UserContext";
 
@@ -6,6 +7,7 @@ import styles from "../styles/question.module.css";
 
 export default function QuestionTwo() {
   const { name, setEmail, email } = useContext(UserContext);
+  const validateEmail = isEmail(email)
 
   return (
     <div className={styles.container}>
@@ -18,7 +20,7 @@ export default function QuestionTwo() {
         onChange={(e) => setEmail(e.target.value)}
       />
 
-      {email === "" ? (
+      {validateEmail === false ? (
         <button disabled type="submit" className={styles.button}>
           Continuar
         </button>
