@@ -23,12 +23,14 @@ export function UserContextProvider({ children }) {
   };
 
   async function handleSubmit() {
-    await axios.post(
+    const response = await axios.post(
       "https://sheet.best/api/sheets/d5ffd075-8e2c-4028-bf25-9e8bc5366475",
       data
     );
 
-    window.location.href = "https://coach20mudar.com.br/desafio-de-10-dias/";
+    window.location.href = "https://desafio10d.com.br/emagrecer-com-saude/";
+
+    console.log(response)
   }
 
   return (
